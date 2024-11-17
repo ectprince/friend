@@ -1,0 +1,70 @@
+جی بلکل! میں ایسا کوڈ بنا سکتی ہوں۔ یہاں ایک HTML، CSS، اور جاوا اسکرپٹ پر مبنی کوڈ ہے جو آپ کے دوست کے لیے ایک دل کے ساتھ میسج دکھائے گا۔
+
+کوڈ:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chotay Dost Ke Liye</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      text-align: center;
+    }
+
+    .heart {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      transform: rotate(-45deg);
+      margin-bottom: 20px;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 50px;
+      top: 0;
+    }
+
+    .message {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .message span {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart"></div>
+  <div class="message">
+    کیا حال ہے میرے چوٹیے دوست! <br> 
+    <span>I Love You</span>
+  </div>
+</
